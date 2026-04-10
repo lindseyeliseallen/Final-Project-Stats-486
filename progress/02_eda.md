@@ -46,24 +46,24 @@ Key Features
 Visualization 1: Distribution of 30-Day Readmission (Count Plot)
 This confirms a significant class imbalance. Roughly 11% of the dataset represents the target class (readmitted <30 days). This tells us that accuracy will not be a reliable metric, so we must prioritize the F1-score to ensure we aren't ignoring the high-risk patients.
 
-![Visualization 1](readmitted and not readmitted bar graph.png)
+![Visualization 1](readmitted_bar_graph.png)
 
 Visualization 2: Hospital Stay Duration vs. Risk (Boxplot)
 Interestingly, the median 'Time in Hospital' is nearly identical for both groups (around 3–4 days). This suggests that the length of the initial stay is not a strong standalone predictor for whether a patient will return within a month.
 
-![Visualization 2](hospital stay vs readmission risk.png)
+![Visualization 2](hospital_stay_readmission_risk.png)
 
 Visualization 3: Readmission Counts by Age Bracket
 Our count plot shows that the vast majority of patients and readmissions occur in the 60–90 age range.
 Age is a major demographic factor, but because the 'No' bars are also highest in these groups, age alone may not be the only predictor
 
-![Visualization 3](readmission counts by age brakcet.png)
+![Visualization 3](age_brakcet.png)
 
 Visualization 4: Number of Diagnoses vs. Risk
 The violin plot indicates that patients who are readmitted (Class 1) have a higher density of records around 9 diagnoses.
 Increased medical complexity (comorbidities) appears to correlate with a higher risk of 30-day readmission.
 
-![Visualization 4](number of diagnoses vs readmission risk.png)
+![Visualization 4](number_diagnoses_readmission_risk.png)
 
 Summary:
 Only about 11% of patients are readmitted within 30 days. We must use F1-score and AUC-ROC for evaluation, as accuracy will be misleadingly high if the model simply predicts 'No' for everyone.
