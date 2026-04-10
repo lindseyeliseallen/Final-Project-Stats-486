@@ -14,9 +14,9 @@ We implemented K-Means Clustering as our additional machine learning method to i
 We utilized two primary metrics to determine the optimal number of clusters ($k$):
 
 1. The Elbow Method: We observed a bend or elbow starting at $k=3$, indicating the point where increasing the number of clusters provides diminishing returns in error reduction.
- 
+![1 Visualization](elbow_method.png)
 2. Silhouette Score: To ensure computational efficiency on this large dataset, we calculated the score on a random sample of 5,000 rows. The score confirmed that $k=3$ provides a statistically sound balance of group separation.
-
+![2 Visualization](silhouette_method.png)
 ## Because our clinical data contains over 10 dimensions, we used Principal Component Analysis (PCA) to project the results into a 2D space for visualization.
 ![PCA Cluster Visualization](elbow_graph.png)
 * PC1 (X-Axis): This axis represents Medical Complexity and Volume. Our PCA loadings show it is primarily driven by time_in_hospital, num_medications, and number_diagnoses.
