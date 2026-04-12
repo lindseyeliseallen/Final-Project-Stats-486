@@ -40,7 +40,7 @@ This dataset contains patient clinical features used to predict the presence of 
 
 ### Repository Organization
 The repository is organized to ensure a clean, reproducible workflow:
-1. **data:** Contains the README file and primary datasets, such as diabetic_data.csv and IDS_mapping.csv.
+1. **data:** Contains primary datasets, such as diabetic_data.csv and IDS_mapping.csv.
 
 2. **notebooks:** Contains the core analytical code:
 * eda_project2 (2).ipynb: Initial data exploration and visualization.
